@@ -13,6 +13,8 @@
 		0C4308302791C8C2004DF662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C43082E2791C8C2004DF662 /* Main.storyboard */; };
 		0C4308322791C8C3004DF662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4308312791C8C3004DF662 /* Assets.xcassets */; };
 		0C4308352791C8C3004DF662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4308332791C8C3004DF662 /* LaunchScreen.storyboard */; };
+		0C52E9DA2794045300559847 /* Menu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52E9D92794045300559847 /* Menu1ViewController.swift */; };
+		0C52E9DC27945EC800559847 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52E9DB27945EC800559847 /* MyTableViewCell.swift */; };
 		5D9C1F6A57BB1C34B6476815 /* Pods_19CafeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB2991229EAD62C98694A1E /* Pods_19CafeApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		0C4308312791C8C3004DF662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C4308342791C8C3004DF662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C4308362791C8C3004DF662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C52E9D92794045300559847 /* Menu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1ViewController.swift; sourceTree = "<group>"; };
+		0C52E9DB27945EC800559847 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		6CB2991229EAD62C98694A1E /* Pods_19CafeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_19CafeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76087C4AA8A661EB3CD47BE4 /* Pods-19CafeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-19CafeApp.release.xcconfig"; path = "Target Support Files/Pods-19CafeApp/Pods-19CafeApp.release.xcconfig"; sourceTree = "<group>"; };
 		F50532DD4012C65319E65673 /* Pods-19CafeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-19CafeApp.debug.xcconfig"; path = "Target Support Files/Pods-19CafeApp/Pods-19CafeApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				0C43082A2791C8C2004DF662 /* SceneDelegate.swift */,
 				0C43082C2791C8C2004DF662 /* ViewController.swift */,
 				0C43082E2791C8C2004DF662 /* Main.storyboard */,
+				0C52E9D92794045300559847 /* Menu1ViewController.swift */,
+				0C52E9DB27945EC800559847 /* MyTableViewCell.swift */,
 				0C4308312791C8C3004DF662 /* Assets.xcassets */,
 				0C4308332791C8C3004DF662 /* LaunchScreen.storyboard */,
 				0C4308362791C8C3004DF662 /* Info.plist */,
@@ -88,7 +94,6 @@
 				F50532DD4012C65319E65673 /* Pods-19CafeApp.debug.xcconfig */,
 				76087C4AA8A661EB3CD47BE4 /* Pods-19CafeApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C43082D2791C8C2004DF662 /* ViewController.swift in Sources */,
+				0C52E9DA2794045300559847 /* Menu1ViewController.swift in Sources */,
 				0C4308292791C8C2004DF662 /* AppDelegate.swift in Sources */,
+				0C52E9DC27945EC800559847 /* MyTableViewCell.swift in Sources */,
 				0C43082B2791C8C2004DF662 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
