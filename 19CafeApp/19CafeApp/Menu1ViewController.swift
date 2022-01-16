@@ -98,6 +98,19 @@ let messages: Array<String> = ["윤다방만의 맛과 향을 더한 100% 아라
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    //셀 선택시 팝업
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.view.hideAllToasts() //이전 토스트창을 지우기
+        self.view.makeToast(messages[indexPath.row], duration:2.0, position: .bottom)
+        
+        let cell = tableView.cellForRow(at: indexPath) as! MyTableViewCell
+        cell.contentView.backgroundColor = UIColor.yellow
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+            cell.contentView.backgroundColor = UIColor.white
+        })
+    }
 
 
 }
