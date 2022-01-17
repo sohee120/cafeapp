@@ -108,6 +108,9 @@
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                     <color key="baseBackgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DpG-3C-76N" kind="show" id="5Qd-1Q-Ajo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -216,6 +219,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eg9-W7-DPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1558" y="68"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="6BL-mu-9d4">
+            <objects>
+                <viewController id="DpG-3C-76N" customClass="StoreViewController" customModule="_9CafeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ho3-pp-IYh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIo-wv-D22">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dbX-n3-6yE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FIo-wv-D22" firstAttribute="top" secondItem="dbX-n3-6yE" secondAttribute="top" id="6PE-FB-YF7"/>
+                            <constraint firstItem="FIo-wv-D22" firstAttribute="bottom" secondItem="dbX-n3-6yE" secondAttribute="bottom" id="YKE-6h-9Ed"/>
+                            <constraint firstItem="FIo-wv-D22" firstAttribute="leading" secondItem="dbX-n3-6yE" secondAttribute="leading" id="aHE-2i-tct"/>
+                            <constraint firstItem="FIo-wv-D22" firstAttribute="trailing" secondItem="dbX-n3-6yE" secondAttribute="trailing" id="uYJ-TM-RxJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sz8-hV-4cz"/>
+                    <connections>
+                        <outlet property="webView" destination="FIo-wv-D22" id="0Jb-Ep-F4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSO-7Q-9HD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1557.9710144927537" y="716.51785714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u7d-uz-ZCa">
